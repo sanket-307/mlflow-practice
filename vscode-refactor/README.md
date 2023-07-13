@@ -20,7 +20,6 @@
         },
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-
     "flake8.args": [
         "--max-line-length=120",
         // "--ignore=E402,F841,F401,E302,E305"
