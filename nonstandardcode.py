@@ -7,6 +7,8 @@ import tarfile
 from six.moves import urllib
 
 
+
+
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
 HOUSING_PATH = os.path.join("datasets", "housing")
 HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
@@ -145,7 +147,7 @@ param_grid = [
   ]
 
 forest_reg = RandomForestRegressor(random_state=42)
-# train across 5 folds, that's a total of (12+6)*5=90 rounds of training 
+# train across 5 folds, that's a total of (12+6)*5=90 rounds of training
 grid_search = GridSearchCV(forest_reg, param_grid, cv=5,
                            scoring='neg_mean_squared_error', return_train_score=True)
 grid_search.fit(housing_prepared, housing_labels)
