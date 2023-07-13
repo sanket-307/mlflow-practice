@@ -32,4 +32,4 @@
     // E305: Expected 2 blank lines after class or function definition, found 1
 }
 
-''' json
+'''
