@@ -1,0 +1,11 @@
+2023-07-17 12:02:26,387:INFO:Fetching Housing Data
+2023-07-17 12:02:26,391:DEBUG:Fetching data from: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
+2023-07-17 12:02:27,508:DEBUG:Location of data stored: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw/housing.csv
+2023-07-17 12:02:27,511:INFO:Housing Fetch Data Completed
+2023-07-17 12:12:06,198:INFO:Loading Data in DataFrame
+2023-07-17 12:25:13,485:INFO:Loading Data in DataFrame
+2023-07-17 12:25:16,473:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-17 12:25:16,474:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-17 12:25:16,475:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-17 12:25:16,477:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-17 12:25:16,477:INFO:Preprocessing and Feature Engineering step completed.
