@@ -9,3 +9,234 @@
 2023-07-17 12:25:16,475:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
 2023-07-17 12:25:16,477:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
 2023-07-17 12:25:16,477:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:25:05,534:INFO:Loading Data in DataFrame
+2023-07-19 08:25:05,969:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:25:05,970:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:25:05,970:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:25:05,970:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:25:05,970:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:25:06,027:INFO:Loading Data in DataFrame
+2023-07-19 08:26:21,434:INFO:Loading Data in DataFrame
+2023-07-19 08:26:21,857:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:26:21,858:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:26:21,858:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:26:21,859:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:26:21,859:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:26:21,910:INFO:Loading Data in DataFrame
+2023-07-19 08:26:21,955:INFO:Loading Data in DataFrame
+2023-07-19 08:26:21,993:INFO:Loading Data in DataFrame
+2023-07-19 08:29:42,627:INFO:Loading Data in DataFrame
+2023-07-19 08:29:43,093:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:29:43,093:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:29:43,094:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:29:43,094:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:29:43,094:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:29:43,217:INFO:Loading Data in DataFrame
+2023-07-19 08:29:43,291:INFO:Loading Data in DataFrame
+2023-07-19 08:30:53,007:INFO:Loading Data in DataFrame
+2023-07-19 08:30:53,453:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:30:53,454:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:30:53,454:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:30:53,454:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:30:53,454:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:30:53,515:INFO:Loading Data in DataFrame
+2023-07-19 08:30:53,639:INFO:Loading Data in DataFrame
+2023-07-19 08:30:53,734:INFO:Loading Data in DataFrame
+2023-07-19 08:31:49,183:INFO:Loading Data in DataFrame
+2023-07-19 08:31:49,630:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:31:49,631:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:31:49,631:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:31:49,631:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:31:49,632:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:31:49,755:INFO:Loading Data in DataFrame
+2023-07-19 08:31:49,785:INFO:Loading Data in DataFrame
+2023-07-19 08:32:01,500:INFO:Loading Data in DataFrame
+2023-07-19 08:32:01,881:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:32:01,881:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:32:01,882:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:32:01,882:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:32:01,882:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:32:01,930:INFO:Loading Data in DataFrame
+2023-07-19 08:32:01,996:INFO:Loading Data in DataFrame
+2023-07-19 08:32:02,040:INFO:Loading Data in DataFrame
+2023-07-19 08:34:17,287:INFO:Loading Data in DataFrame
+2023-07-19 08:34:17,714:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:34:17,715:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:34:17,715:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:34:17,715:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:34:17,715:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:34:17,772:INFO:Loading Data in DataFrame
+2023-07-19 08:34:17,806:INFO:Loading Data in DataFrame
+2023-07-19 08:34:17,836:INFO:Loading Data in DataFrame
+2023-07-19 08:34:36,209:INFO:Loading Data in DataFrame
+2023-07-19 08:34:36,669:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:34:36,669:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:34:36,670:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:34:36,670:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:34:36,670:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:34:36,715:INFO:Loading Data in DataFrame
+2023-07-19 08:34:36,740:INFO:Loading Data in DataFrame
+2023-07-19 08:34:36,773:INFO:Loading Data in DataFrame
+2023-07-19 08:37:29,522:INFO:Loading Data in DataFrame
+2023-07-19 08:37:29,946:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:37:29,946:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:37:29,946:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:37:29,947:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:37:29,947:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 08:37:29,972:INFO:Loading Data in DataFrame
+2023-07-19 08:37:30,012:INFO:Loading Data in DataFrame
+2023-07-19 08:37:30,052:INFO:Loading Data in DataFrame
+2023-07-19 08:59:07,345:INFO:Loading Data in DataFrame
+2023-07-19 08:59:07,801:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 08:59:07,801:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 08:59:07,802:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 08:59:07,802:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 08:59:07,802:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 09:08:24,181:INFO:Loading Data in DataFrame
+2023-07-19 09:08:24,598:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 09:08:24,599:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 09:08:24,599:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 09:08:24,600:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 09:08:24,600:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 09:09:04,156:INFO:Loading Data in DataFrame
+2023-07-19 09:09:04,526:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed1/housing_train.csv
+2023-07-19 09:09:04,527:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed1/housing_label.csv
+2023-07-19 09:09:04,527:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed1/housing_testdata.csv
+2023-07-19 09:09:04,527:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed1/housing_testlabel.csv
+2023-07-19 09:09:04,527:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 09:09:57,340:INFO:Loading Data in DataFrame
+2023-07-19 09:26:01,853:INFO:Loading Data in DataFrame
+2023-07-19 09:26:02,337:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 09:26:02,338:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 09:26:02,338:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 09:26:02,338:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 09:26:02,338:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 09:28:17,695:INFO:Loading Data in DataFrame
+2023-07-19 09:28:18,124:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 09:28:18,125:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 09:28:18,125:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 09:28:18,125:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 09:28:18,125:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 09:42:20,649:INFO:Loading Data in DataFrame
+2023-07-19 09:42:55,777:INFO:Loading Data in DataFrame
+2023-07-19 09:42:56,142:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 09:42:56,142:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 09:42:56,142:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 09:42:56,142:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 09:42:56,142:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 09:43:31,947:INFO:Loading Data in DataFrame
+2023-07-19 09:43:32,342:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw1/housing_train.csv
+2023-07-19 09:43:32,343:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw1/housing_label.csv
+2023-07-19 09:43:32,343:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw1/housing_testdata.csv
+2023-07-19 09:43:32,343:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw1/housing_testlabel.csv
+2023-07-19 09:43:32,343:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 10:49:12,334:INFO:Loading Data in DataFrame
+2023-07-19 10:50:02,253:INFO:Loading Data in DataFrame
+2023-07-19 10:51:15,338:INFO:Loading Data in DataFrame
+2023-07-19 10:51:16,016:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 10:51:16,017:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 10:51:16,017:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 10:51:16,017:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 10:51:16,017:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 10:51:16,070:INFO:Loading Data in DataFrame
+2023-07-19 10:51:16,131:INFO:Loading Data in DataFrame
+2023-07-19 10:51:16,171:INFO:Loading Data in DataFrame
+2023-07-19 10:51:46,269:INFO:Loading Data in DataFrame
+2023-07-19 10:51:46,727:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 10:51:46,729:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 10:51:46,729:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 10:51:46,729:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 10:51:46,729:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 11:01:13,138:INFO:Loading Data in DataFrame
+2023-07-19 11:01:13,605:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 11:01:13,606:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 11:01:13,606:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 11:01:13,606:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 11:01:13,606:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 11:02:02,904:INFO:Loading Data in DataFrame
+2023-07-19 11:02:03,468:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 11:02:03,468:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 11:02:03,469:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 11:02:03,469:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 11:02:03,469:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 11:04:43,859:INFO:Loading Data in DataFrame
+2023-07-19 11:04:44,290:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 11:04:44,291:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 11:04:44,291:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 11:04:44,292:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 11:04:44,292:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 11:05:27,114:INFO:Loading Data in DataFrame
+2023-07-19 11:05:27,539:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 11:05:27,539:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 11:05:27,540:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 11:05:27,540:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 11:05:27,540:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 11:05:32,428:INFO:Loading Data in DataFrame
+2023-07-19 11:05:32,810:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 11:05:32,810:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 11:05:32,810:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 11:05:32,811:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 11:05:32,811:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 12:19:31,115:INFO:Loading Data in DataFrame
+2023-07-19 12:19:33,686:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 12:19:33,687:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 12:19:33,687:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 12:19:33,688:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 12:19:33,688:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 12:25:36,697:INFO:Loading Data in DataFrame
+2023-07-19 12:25:37,974:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_train.csv
+2023-07-19 12:25:37,975:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_label.csv
+2023-07-19 12:25:37,975:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testdata.csv
+2023-07-19 12:25:37,975:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processed/housing_testlabel.csv
+2023-07-19 12:25:37,976:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-19 12:25:38,128:INFO:Loading Data in DataFrame
+2023-07-19 12:25:38,356:INFO:Loading Data in DataFrame
+2023-07-19 12:25:38,509:INFO:Loading Data in DataFrame
+2023-07-20 06:37:37,038:INFO:Loading Data in DataFrame
+2023-07-20 06:39:34,977:INFO:Loading Data in DataFrame
+2023-07-20 06:39:59,751:INFO:Loading Data in DataFrame
+2023-07-20 08:43:11,735:INFO:Fetching Housing Data
+2023-07-20 08:43:11,736:DEBUG:Fetching data from: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
+2023-07-20 08:43:15,554:DEBUG:Location of data stored: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw/housing.csv
+2023-07-20 08:43:15,555:INFO:Housing Fetch Data Completed
+2023-07-20 08:43:15,556:INFO:Loading Data in DataFrame
+2023-07-20 08:45:33,371:INFO:Fetching Housing Data
+2023-07-20 08:45:33,377:DEBUG:Fetching data from: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
+2023-07-20 08:45:35,352:DEBUG:Location of data stored: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw/housing.csv
+2023-07-20 08:45:35,353:INFO:Housing Fetch Data Completed
+2023-07-20 08:45:35,359:INFO:Loading Data in DataFrame
+2023-07-20 08:45:35,819:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed/housing_train.csv
+2023-07-20 08:45:35,820:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed/housing_label.csv
+2023-07-20 08:45:35,820:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed/housing_testdata.csv
+2023-07-20 08:45:35,820:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed/housing_testlabel.csv
+2023-07-20 08:45:35,820:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-20 08:52:11,636:INFO:Fetching Housing Data
+2023-07-20 08:52:11,639:DEBUG:Fetching data from: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
+2023-07-20 08:52:17,955:DEBUG:Location of data stored: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw/housing.csv
+2023-07-20 08:52:17,956:INFO:Housing Fetch Data Completed
+2023-07-20 08:52:17,959:INFO:Loading Data in DataFrame
+2023-07-20 08:52:18,379:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed/housing_train.csv
+2023-07-20 08:52:18,382:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed/housing_label.csv
+2023-07-20 08:52:18,383:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed/housing_testdata.csv
+2023-07-20 08:52:18,383:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed/housing_testlabel.csv
+2023-07-20 08:52:18,384:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-20 08:53:00,099:INFO:Fetching Housing Data
+2023-07-20 08:53:00,100:DEBUG:Fetching data from: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
+2023-07-20 08:53:03,821:DEBUG:Location of data stored: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw1/housing.csv
+2023-07-20 08:53:03,821:INFO:Housing Fetch Data Completed
+2023-07-20 08:53:03,826:INFO:Loading Data in DataFrame
+2023-07-20 08:53:04,108:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed1/housing_train.csv
+2023-07-20 08:53:04,109:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed1/housing_label.csv
+2023-07-20 08:53:04,109:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed1/housing_testdata.csv
+2023-07-20 08:53:04,109:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed1/housing_testlabel.csv
+2023-07-20 08:53:04,110:INFO:Preprocessing and Feature Engineering step completed.
+2023-07-20 09:02:49,743:INFO:Fetching Housing Data
+2023-07-20 09:02:49,745:DEBUG:Fetching data from: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
+2023-07-20 09:02:51,190:DEBUG:Location of data stored: /home/vagrant/git_workspace/mle-training/mlhousing/data/raw1/housing.csv
+2023-07-20 09:02:51,191:INFO:Housing Fetch Data Completed
+2023-07-20 09:02:51,198:INFO:Loading Data in DataFrame
+2023-07-20 09:02:51,570:DEBUG:Processed and feature engineered training data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed1/housing_train.csv
+2023-07-20 09:02:51,572:DEBUG:Training labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed1/housing_label.csv
+2023-07-20 09:02:51,573:DEBUG:Processed and feature engineered test data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed1/housing_testdata.csv
+2023-07-20 09:02:51,573:DEBUG:Test labels data stored at: /home/vagrant/git_workspace/mle-training/mlhousing/data/processsed1/housing_testlabel.csv
+2023-07-20 09:02:51,573:INFO:Preprocessing and Feature Engineering step completed.
