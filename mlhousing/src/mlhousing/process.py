@@ -1,5 +1,5 @@
 import argparse
-from dataprocessing.temp import sum
+
 from dataprocessing.preprocess import init_preprocess
 from dataprocessing.ingest_data import fetch_housing_data
 from training.train import init_training
@@ -7,6 +7,15 @@ from score.score import init_score
 
 
 def parse_args():
+    """Parse argument function which take command line argument for required folders and files which will be input as argument in different funtions
+
+    Args:
+        Command line arguments
+
+    Return : args object
+
+    """
+
     parser = argparse.ArgumentParser(
         description="Preprocessing script to preprocess raw data"
     )
@@ -65,8 +74,17 @@ def parse_args():
 
 
 if __name__ == "__main__":
+    """Main function to run project pipeline like data ingest, preporcess, train and score
+
+    Args:
+        None
+
+    Return : None.
+
+    """
+
     inputs = parse_args()
-    # sum(inputs.a, inputs.b)
+
     fetch_housing_data(inputs.output_folder_rawdata)
     init_preprocess(inputs.input_folder, inputs.input_filename, inputs.output_folder)
     init_training(inputs.training_data_path, inputs.artifacts_path)

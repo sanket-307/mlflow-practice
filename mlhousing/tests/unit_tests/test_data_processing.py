@@ -9,21 +9,32 @@ from src.mlhousing.dataprocessing.preprocess import (
     feature_engineering_traindataset,
     feature_engineering_testdataset,
 )
-from src.mlhousing.dataprocessing.temp import sum
-
-
-def test_sum(params):
-    sum(params["A"], params["B"])
-    assert sum(params["A"], params["B"]) == params["C"]
 
 
 def test_housing_df(params):
+    """unit testing of raw data load.
 
+    Args:
+        params (dictionary from conftest.py)
+
+
+    Return : assert, None.
+
+    """
     df = load_housing_data(params["INPUT_PATH"], params["INPUT_FILE"])
     assert isinstance(df, pd.DataFrame)
 
 
 def test_columns_present(get_rawdf):
+    """unit testing of raw data columns present.
+
+    Args:
+    get_rawdf (df from conftest.py)
+
+
+    Return : assert, None.
+
+    """
     # ensures that the expected columns are all present
     assert "longitude" in get_rawdf.columns
     assert "latitude" in get_rawdf.columns
@@ -37,11 +48,31 @@ def test_columns_present(get_rawdf):
 
 
 def test_non_empty(get_rawdf):
+    """unit testing of dataframe.
+
+    Args:
+    get_rawdf (df from conftest.py)
+
+
+    Return : assert, None.
+
+    """
+    # ensures that the expected columns are all present
     # ensures that there is more than one row of data
     assert len(get_rawdf.index) != 0
 
 
 def test_binning(get_rawdf):
+    """unit testing of binning function.
+
+    Args:
+    get_rawdf (df from conftest.py)
+
+
+    Return : assert, None.
+
+    """
+    # ensures that the expected columns are all present
     binning_df = binning(get_rawdf)
     assert "income_cat" in get_rawdf.columns
     assert isinstance(binning_df, pd.DataFrame)
@@ -49,12 +80,31 @@ def test_binning(get_rawdf):
 
 
 def test_startified_split(get_binningdf):
+    """unit testing of stratified split function.
+
+    Args:
+    get_binningdf (df from conftest.py)
+
+
+    Return : assert, None.
+
+    """
     strat_train_set, strat_test_set = startified_split(get_binningdf)
     assert isinstance(strat_train_set, pd.DataFrame)
     assert isinstance(strat_test_set, pd.DataFrame)
 
 
 def test_feature_engineering_traindataset(get_startified_split):
+    """unit testing of feature_engineering_traindataset function.
+
+    Args:
+    get_startified_split (df (tuples- train, test) from conftest.py)
+
+
+    Return : assert, None.
+
+    """
+
     df1, df2 = get_startified_split
     X_train, y_train, imputer = feature_engineering_traindataset(df1)
     assert "rooms_per_household" in X_train.columns
@@ -79,6 +129,17 @@ def test_feature_engineering_traindataset(get_startified_split):
 def test_feature_engineering_testdataset(
     get_startified_split, get_feature_engineering_traindataset
 ):
+    """unit testing of feature_engineering_testdataset function.
+
+    Args:
+    get_startified_split (df (tuples- train, test) from conftest.py)
+    get_feature_engineering_testdataset (df (tuples - X_train, y_train, imputer) from conftest.py)
+
+
+    Return : assert, None.
+
+    """
+
     df1, df2 = get_startified_split
     df11, df21, imputer = get_feature_engineering_traindataset
 

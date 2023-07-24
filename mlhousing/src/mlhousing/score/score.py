@@ -3,16 +3,33 @@ import numpy as np
 import pandas as pd
 import os
 import pickle
+
+# from base_logger import logging
+
 import logging
+
+logging = logging
+
+logging.basicConfig(
+    filename="logs/mlhousing.log",
+    encoding="utf-8",
+    format="%(asctime)s:%(levelname)s:%(message)s",
+    level=logging.DEBUG,
+)
 
 
 def init_score(testing_data_path, artifacts_path):
-    logging.basicConfig(
-        filename="mlhousing.log",
-        encoding="utf-8",
-        format="%(asctime)s:%(levelname)s:%(message)s",
-        level=logging.DEBUG,
-    )
+    """function take commandline arguments from process.py and call different function to execute score operations for linear regression,
+    decision tree, random forest random saerch and random forest grid search.
+
+        Args:
+            testing_data_path (string, mandatory)
+            artifacts_path (string, mandatory)
+
+
+        Return : None.
+
+    """
 
     test_data = os.path.join(testing_data_path, "housing_testdata.csv")
     test_label = os.path.join(testing_data_path, "housing_testlabel.csv")
@@ -33,6 +50,19 @@ def init_score(testing_data_path, artifacts_path):
 
 
 def linear_score(X_test, y_test, artifacts_path):
+    """load linearmodel.pkl from artifacts_path and perform prediction on
+    X_test and calculate the RMSE score.
+
+    Args:
+        X_test (dataframe, mandatory)
+        y_test (dataframe, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : dictionary {"Linear RMSE": lin_mae}.
+
+    """
+
     linear_pickle = os.path.join(artifacts_path, "linearmodel.pkl")
     lin_reg = pickle.load(open(linear_pickle, "rb"))
 
@@ -53,6 +83,19 @@ def linear_score(X_test, y_test, artifacts_path):
 
 
 def dt_score(X_test, y_test, artifacts_path):
+    """load dtmodel.pkl from artifacts_path and perform prediction on
+    X_test and calculate the RMSE score.
+
+    Args:
+        X_test (dataframe, mandatory)
+        y_test (dataframe, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : dictionary {"DT RMSE": tree_rmse}.
+
+    """
+
     dt_pickle = os.path.join(artifacts_path, "dtmodel.pkl")
     tree_reg = pickle.load(open(dt_pickle, "rb"))
     y_pred = tree_reg.predict(X_test)
@@ -66,6 +109,19 @@ def dt_score(X_test, y_test, artifacts_path):
 
 
 def rf_rs_score(X_test, y_test, artifacts_path):
+    """load rf_rs_model.pkl from artifacts_path and perform prediction on
+    X_test and calculate the RMSE score.
+
+    Args:
+        X_test (dataframe, mandatory)
+        y_test (dataframe, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : dictionary {"RT RS RMSE": final_rmse}.
+
+    """
+
     rf_rs_pickle = os.path.join(artifacts_path, "rf_rs_model.pkl")
     rf_rs_model = pickle.load(open(rf_rs_pickle, "rb"))
     final_predictions = rf_rs_model.predict(X_test)
@@ -77,6 +133,19 @@ def rf_rs_score(X_test, y_test, artifacts_path):
 
 
 def rf_grid_score(X_test, y_test, artifacts_path):
+    """load rf_grid_model.pkl from artifacts_path and perform prediction on
+    X_test and calculate the RMSE score.
+
+    Args:
+        X_test (dataframe, mandatory)
+        y_test (dataframe, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : dictionary {"RT GRID RMSE": final_rmse}.
+
+    """
+
     rf_grid_pickle = os.path.join(artifacts_path, "rf_grid_model.pkl")
     rf_grid_model = pickle.load(open(rf_grid_pickle, "rb"))
     final_predictions = rf_grid_model.predict(X_test)

@@ -1,20 +1,35 @@
 import os
 import tarfile
 from six.moves import urllib
+
+# from base_logger import logging
+
 import logging
+
+logging = logging
+
+logging.basicConfig(
+    filename="logs/mlhousing.log",
+    encoding="utf-8",
+    format="%(asctime)s:%(levelname)s:%(message)s",
+    level=logging.DEBUG,
+)
 
 
 def fetch_housing_data(OUTPUT_PATH):
+    """Fetch the data from the url and store data in output_path folder
+
+    Args:
+        OUTPUT_PATH (string, optional)
+
+    Return : None.
+
+    """
+
     output_path = OUTPUT_PATH
     DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
     HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
-    logging.basicConfig(
-        filename="mlhousing.log",
-        encoding="utf-8",
-        format="%(asctime)s:%(levelname)s:%(message)s",
-        level=logging.DEBUG,
-    )
     logging.info("Fetching Housing Data")
     logging.debug("Fetching data from: %s", HOUSING_URL)
     os.makedirs(output_path, exist_ok=True)

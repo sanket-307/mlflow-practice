@@ -6,21 +6,39 @@ from sklearn.model_selection import (
     RandomizedSearchCV,
 )
 from sklearn.tree import DecisionTreeRegressor
-import numpy as np
+
+# import numpy as np
 import pandas as pd
 import os
 import pickle
 from scipy.stats import randint
+
+# from base_logger import logging
+
 import logging
+
+logging = logging
+
+logging.basicConfig(
+    filename="logs/mlhousing.log",
+    encoding="utf-8",
+    format="%(asctime)s:%(levelname)s:%(message)s",
+    level=logging.DEBUG,
+)
 
 
 def init_training(training_data_path, artifacts_path):
-    logging.basicConfig(
-        filename="mlhousing.log",
-        encoding="utf-8",
-        format="%(asctime)s:%(levelname)s:%(message)s",
-        level=logging.DEBUG,
-    )
+    """function take commandline arguments from process.py and call different function to execute training operations for linear regression,
+    decision tree, random forest random saerch and random forest grid search.
+
+    Args:
+        training_data_path (string, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : None.
+
+    """
 
     training_data = os.path.join(training_data_path, "housing_train.csv")
     training_label = os.path.join(training_data_path, "housing_label.csv")
@@ -41,6 +59,18 @@ def init_training(training_data_path, artifacts_path):
 
 
 def linear_regression(X_train, y_train, artifacts_path):
+    """Train linear regression model on X_train, y_train and save linearmodel.pkl model file to artifacts_path.
+
+    Args:
+        X_train (dataframe, mandatory)
+        y_train (dataframe, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : None.
+
+    """
+
     lin_reg = LinearRegression()
     lin_reg.fit(X_train, y_train)
 
@@ -51,6 +81,18 @@ def linear_regression(X_train, y_train, artifacts_path):
 
 
 def decision_tree(X_train, y_train, artifacts_path):
+    """Train decision tree regression model on X_train, y_train and save dtmodel.pkl model file to artifacts_path.
+
+    Args:
+        X_train (dataframe, mandatory)
+        y_train (dataframe, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : None.
+
+    """
+
     tree_reg = DecisionTreeRegressor(random_state=42)
     tree_reg.fit(X_train, y_train)
 
@@ -61,6 +103,19 @@ def decision_tree(X_train, y_train, artifacts_path):
 
 
 def rf_rs_regression(X_train, y_train, artifacts_path):
+    """Train random forest regression model on X_train, y_train and save dtmodel.pkl model file to artifacts_path.
+        hyperparameter tunning job is performed using random search alogrithm.
+
+    Args:
+        X_train (dataframe, mandatory)
+        y_train (dataframe, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : None.
+
+    """
+
     y_train = y_train.values.ravel()
 
     param_distribs = {
@@ -101,6 +156,19 @@ def rf_rs_regression(X_train, y_train, artifacts_path):
 
 
 def rf_grid_regression(X_train, y_train, artifacts_path):
+    """Train random forest regression model on X_train, y_train and save dtmodel.pkl model file to artifacts_path.
+        hyperparameter tunning job is performed using grid search alogrithm.
+
+    Args:
+        X_train (dataframe, mandatory)
+        y_train (dataframe, mandatory)
+        artifacts_path (string, mandatory)
+
+
+    Return : None.
+
+    """
+
     y_train = y_train.values.ravel()
 
     param_grid = [

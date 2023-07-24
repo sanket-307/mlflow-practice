@@ -8,6 +8,16 @@ from src.mlhousing.score.score import linear_score, dt_score, rf_rs_score, rf_gr
 
 
 def data_generator(testing_data_path):
+    """data genrator function to load processed testing data and label to do unit test of score.
+
+    Args:
+        training_data_path (string, mandatory)
+
+
+    Return : X_test, y_test (Dataframe).
+
+    """
+
     test_data = os.path.join(testing_data_path, "housing_testdata.csv")
     test_label = os.path.join(testing_data_path, "housing_testlabel.csv")
 
@@ -18,6 +28,16 @@ def data_generator(testing_data_path):
 
 
 def test_linear_regression_load_score(params):
+    """unit testing of linear regression.
+
+    Args:
+        params (dictionary from conftest.py)
+
+
+    Return : assert, None.
+
+    """
+
     X_test, y_test = data_generator(params["OUTPUT_PATH"])
 
     artifacts = params["ARTIFACTS_PATH"]
@@ -32,6 +52,16 @@ def test_linear_regression_load_score(params):
 
 
 def test_decision_tree_load_score(params):
+    """unit testing of DT regression.
+
+    Args:
+        params (dictionary from conftest.py)
+
+
+    Return : assert, None.
+
+    """
+
     X_test, y_test = data_generator(params["OUTPUT_PATH"])
 
     artifacts = params["ARTIFACTS_PATH"]
@@ -46,6 +76,16 @@ def test_decision_tree_load_score(params):
 
 
 def test_rf_rs_regression_load_score(params):
+    """unit testing of random forest random search hyperparameter regression.
+
+    Args:
+        params (dictionary from conftest.py)
+
+
+    Return : assert, None.
+
+    """
+
     X_test, y_test = data_generator(params["OUTPUT_PATH"])
 
     artifacts = params["ARTIFACTS_PATH"]
@@ -60,6 +100,15 @@ def test_rf_rs_regression_load_score(params):
 
 
 def test_rf_grid_regression_load_score(params):
+    """unit testing of random forest grid search hyperparameter regression.
+
+    Args:
+        params (dictionary from conftest.py)
+
+
+    Return : assert, None.
+
+    """
     X_test, y_test = data_generator(params["OUTPUT_PATH"])
 
     artifacts = params["ARTIFACTS_PATH"]
