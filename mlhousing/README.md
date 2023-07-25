@@ -73,7 +73,3 @@ pytest - v mlhousing/tests/unit_tests/test_data_processing.py --i `<raw dataset 
 ---
 
 Style testing has been performed using isort, black and flake8 the configuration for each style test are in *setup.cfg*
-
----
-
-![Tests]https://github.com/sanket-307/mle-training/actions/workflows/tests/yml/badge.svg

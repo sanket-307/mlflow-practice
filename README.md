@@ -17,3 +17,7 @@ The following techniques have been used:
 ## To excute the script
 python < scriptname.py >
 
+Complete refactored code according to mentioned instructions of Assignment 2.1
+Please find test coverage report snapshot.
+
+![Tests]https://github.com/sanket-307/mle-training/actions/workflows/tests/yml/badge.svg
