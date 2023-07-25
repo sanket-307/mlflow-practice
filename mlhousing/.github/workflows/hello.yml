@@ -1,0 +1,13 @@
+name: helloworld
+
+on:
+    push:
+     branches: ['enh/10/complete-refactor']
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello step
+        run: echo "hello world"
