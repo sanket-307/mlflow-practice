@@ -76,4 +76,4 @@ Style testing has been performed using isort, black and flake8 the configuration
 
 ---
 
-![Tests]https://github.com/sanket-307/mle-training/actions/workflows/tests/yml/badge.svg?branch=enh/10/complete-refactor
+![Tests]https://github.com/sanket-307/mle-training/actions/workflows/tests/yml/badge.svg
