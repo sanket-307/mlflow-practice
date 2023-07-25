@@ -1,6 +1,7 @@
 name: mlhousing
 
-on: [push]
+on:
+    - push
 
 jobs:
   build:
