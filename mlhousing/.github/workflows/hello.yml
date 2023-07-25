@@ -2,7 +2,7 @@ name: helloworld
 
 on:
     push:
-     branches: ['enh/10/complete-refactor']
+    #  branches: ['enh/10/complete-refactor']
     #  paths:
     #     - ".github/workflows/hello.yml"
 
