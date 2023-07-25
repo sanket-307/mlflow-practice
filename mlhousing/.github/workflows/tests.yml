@@ -1,7 +1,9 @@
 name: mlhousing
 
 on:
-    - push
+    push:
+     branches:
+        - 'enh/10/complete-refactor'
 
 jobs:
   build:
