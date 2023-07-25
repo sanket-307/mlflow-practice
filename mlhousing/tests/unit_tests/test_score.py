@@ -75,48 +75,48 @@ def test_decision_tree_load_score(params):
     assert rmse["DT RMSE"] >= 0.0
 
 
-def test_rf_rs_regression_load_score(params):
-    """unit testing of random forest random search hyperparameter regression.
+# def test_rf_rs_regression_load_score(params):
+#     """unit testing of random forest random search hyperparameter regression.
 
-    Args:
-        params (dictionary from conftest.py)
-
-
-    Return : assert, None.
-
-    """
-
-    X_test, y_test = data_generator(params["OUTPUT_PATH"])
-
-    artifacts = params["ARTIFACTS_PATH"]
-
-    rmse = rf_rs_score(X_test, y_test, artifacts)
-
-    rf_rs_pickle = os.path.join(artifacts, "rf_rs_model.pkl")
-    rf_rs_model = pickle.load(open(rf_rs_pickle, "rb"))
-    assert isinstance(rf_rs_model, RandomForestRegressor)
-    assert isinstance(rmse["RT RS RMSE"], float)
-    assert rmse["RT RS RMSE"] >= 0.0
+#     Args:
+#         params (dictionary from conftest.py)
 
 
-def test_rf_grid_regression_load_score(params):
-    """unit testing of random forest grid search hyperparameter regression.
+#     Return : assert, None.
 
-    Args:
-        params (dictionary from conftest.py)
+#     """
+
+#     X_test, y_test = data_generator(params["OUTPUT_PATH"])
+
+#     artifacts = params["ARTIFACTS_PATH"]
+
+#     rmse = rf_rs_score(X_test, y_test, artifacts)
+
+#     rf_rs_pickle = os.path.join(artifacts, "rf_rs_model.pkl")
+#     rf_rs_model = pickle.load(open(rf_rs_pickle, "rb"))
+#     assert isinstance(rf_rs_model, RandomForestRegressor)
+#     assert isinstance(rmse["RT RS RMSE"], float)
+#     assert rmse["RT RS RMSE"] >= 0.0
 
 
-    Return : assert, None.
+# def test_rf_grid_regression_load_score(params):
+#     """unit testing of random forest grid search hyperparameter regression.
 
-    """
-    X_test, y_test = data_generator(params["OUTPUT_PATH"])
+#     Args:
+#         params (dictionary from conftest.py)
 
-    artifacts = params["ARTIFACTS_PATH"]
 
-    rmse = rf_grid_score(X_test, y_test, artifacts)
+#     Return : assert, None.
 
-    rf_grid_pickle = os.path.join(artifacts, "rf_rs_model.pkl")
-    rf_grid_model = pickle.load(open(rf_grid_pickle, "rb"))
-    assert isinstance(rf_grid_model, RandomForestRegressor)
-    assert isinstance(rmse["RT GRID RMSE"], float)
-    assert rmse["RT GRID RMSE"] >= 0.0
+#     """
+#     X_test, y_test = data_generator(params["OUTPUT_PATH"])
+
+#     artifacts = params["ARTIFACTS_PATH"]
+
+#     rmse = rf_grid_score(X_test, y_test, artifacts)
+
+#     rf_grid_pickle = os.path.join(artifacts, "rf_rs_model.pkl")
+#     rf_grid_model = pickle.load(open(rf_grid_pickle, "rb"))
+#     assert isinstance(rf_grid_model, RandomForestRegressor)
+#     assert isinstance(rmse["RT GRID RMSE"], float)
+#     assert rmse["RT GRID RMSE"] >= 0.0

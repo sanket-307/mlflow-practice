@@ -19,10 +19,10 @@ def pytest_addoption(parser):
 
     """
 
-    parser.addoption("--i", type=str, default="data/raw")
+    parser.addoption("--i", type=str, default="mlhousing/data/raw")
     parser.addoption("--f", type=str, default="housing.csv")
-    parser.addoption("--o", type=str, default="data/processed")
-    parser.addoption("--m", type=str, default="artifacts")
+    parser.addoption("--o", type=str, default="mlhousing/data/processed")
+    parser.addoption("--m", type=str, default="mlhousing/artifacts")
 
 
 @pytest.fixture
