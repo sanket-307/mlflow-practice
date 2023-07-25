@@ -1,0 +1,15 @@
+2023-07-25 09:18:39,888:INFO:Linear Regression model trained
+2023-07-25 09:18:39,889:DEBUG:Linear Regression artifacts stored at: artifacts/linearmodel.pkl
+2023-07-25 09:18:40,169:INFO:DT model trained
+2023-07-25 09:18:40,171:DEBUG:DT artifacts stored at: artifacts/dtmodel.pkl
+2023-07-25 09:18:40,181:INFO:Loading Data in DataFrame
+2023-07-25 09:18:40,372:INFO:Loading Data in DataFrame
+2023-07-25 09:18:40,539:INFO:Loading Data in DataFrame
+2023-07-25 09:18:40,735:INFO:Loading Data in DataFrame
+2023-07-25 09:18:40,937:INFO:Loading Data in DataFrame
+2023-07-25 09:18:41,282:INFO:Loading Data in DataFrame
+2023-07-25 09:18:41,622:INFO:Loading Data in DataFrame
+2023-07-25 09:18:42,245:INFO:Linear Regression RMSE: 67850.37028433719
+2023-07-25 09:18:42,317:INFO:Linear Regression MAE: 49338.12098253612
+2023-07-25 09:18:42,517:INFO:DT RMSE: 84598.31648321431
+2023-07-25 09:18:44,735:INFO:Random forest grid search RMSE: 47830.186702936946
