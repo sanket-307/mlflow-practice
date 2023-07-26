@@ -1,6 +1,17 @@
+Metadata-Version: 2.1
+Name: mlhousing
+Version: 1.0
+Summary: A small example package for mlhousing prediction
+Home-page: https://github.com/sanket-307/mle-training/tree/enh/10/complete-refactor/mlhousing
+Author: sanket
+Author-email: sanket.patel@tigeranalytics.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
 # mlhousing
 
-this project is about median house value prediction. median house value prediction has been done using four algorithm namely linear regression, decision tree, random forest with best hyperparamertes from random search technique and random forest with best hyperparamertes from grid search technique.
+this project is about median house value prediction on raw dataset. median house value prediction has been done using four algorithm namely linear regression, decision tree, random forest with best hyperparamertes from random search technique and random forest with best hyperparamertes from grid search technique.
 
 to run project git clone mlhousing
 
@@ -50,7 +61,7 @@ you can find
 
 ---
 
-run below command which will do unit testing, integration testing and generate coverage report.
+Go to the parent folder of project and run below command which will do unit testing, integration testing and generate coverage report.
 
 ```
 coverage run -m pytest -v && coverage report -m
@@ -64,7 +75,7 @@ conftest file configured to take optional command line arguments for unit_test a
 
 to run test files with custom arguments
 
-pytest - v tests/unit_tests/test_data_processing.py --i `<raw dataset folder path>`--f `<raw csv file name>`  --o `<processed training and testing data folder path>`  --m `<artifact folder path>`
+pytest - v mlhousing/tests/unit_tests/test_data_processing.py --i `<raw dataset folder path>`--f `<raw csv file name>`  --o `<processed training and testing data folder path>`  --m `<artifact folder path>`
 
 ---
 
