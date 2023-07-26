@@ -19,19 +19,31 @@ def pytest_addoption(parser):
 
     """
 
+    # parser.addoption(
+    #     "--i", help="raw dataset folder path", type=str, default="mlhousing/data/raw"
+    # )
+    # parser.addoption("--f", help="raw csv file name", type=str, default="housing.csv")
+    # parser.addoption(
+    #     "--o",
+    #     help="processed training and testing data folder path",
+    #     type=str,
+    #     default="mlhousing/data/processed",
+    # )
+    # parser.addoption(
+    #     "--m", help="artifact folder path", type=str, default="mlhousing/artifacts"
+    # )
+
     parser.addoption(
-        "--i", help="raw dataset folder path", type=str, default="mlhousing/data/raw"
+        "--i", help="raw dataset folder path", type=str, default="data/raw"
     )
     parser.addoption("--f", help="raw csv file name", type=str, default="housing.csv")
     parser.addoption(
         "--o",
         help="processed training and testing data folder path",
         type=str,
-        default="mlhousing/data/processed",
+        default="data/processed",
     )
-    parser.addoption(
-        "--m", help="artifact folder path", type=str, default="mlhousing/artifacts"
-    )
+    parser.addoption("--m", help="artifact folder path", type=str, default="artifacts")
 
 
 @pytest.fixture
