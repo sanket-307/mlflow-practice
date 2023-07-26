@@ -1,0 +1,6 @@
+venv/
+venvps/
+*.pyc
+.vscode/
+*.log
+*.csv
