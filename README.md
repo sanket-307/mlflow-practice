@@ -31,5 +31,3 @@
         // E302: Expected 2 blank lines, found 0
         // E305: Expected 2 blank lines after class or function definition, found 1
     }
-
-  ```
