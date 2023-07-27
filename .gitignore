@@ -3,9 +3,8 @@ venvps/
 *.pyc
 .vscode/
 *.log
-*.csv
-/*.pkl
-artifacts/
-data/processed/
-data/raw/
+*.pkl
+# artifacts/
+# data/processed/
+# data/raw/
 docs/_build/
