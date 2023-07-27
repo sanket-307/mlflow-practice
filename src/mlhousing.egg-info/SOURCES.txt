@@ -9,5 +9,4 @@ src/mlhousing/train.py
 src/mlhousing.egg-info/PKG-INFO
 src/mlhousing.egg-info/SOURCES.txt
 src/mlhousing.egg-info/dependency_links.txt
-src/mlhousing.egg-info/not-zip-safe
 src/mlhousing.egg-info/top_level.txt
