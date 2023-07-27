@@ -6,4 +6,3 @@ venvps/
 *.csv
 *.pkl
 docs/_build/
-mlhousing.egg-info/
