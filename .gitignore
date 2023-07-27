@@ -3,3 +3,7 @@ venvps/
 *.pyc
 .vscode/
 *.log
+*.csv
+*.pkl
+docs/_build/
+mlhousing.egg-info/

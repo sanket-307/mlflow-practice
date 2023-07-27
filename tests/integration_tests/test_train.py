@@ -1,7 +1,7 @@
 from os import path
 import os
 import pandas as pd
-from src.mlhousing.training.train import (
+from mlhousing.train import (
     linear_regression,
     decision_tree,
 )

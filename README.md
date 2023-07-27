@@ -46,11 +46,11 @@ you can find
 
 ---
 
-**Unit Test and Integration test**
+**Unit Test, Integration test and Installation Test**
 
 ---
 
-run below command which will do unit testing, integration testing and generate coverage report.
+run below command which will do unit testing, integration testing, installation test and generate coverage report.
 
 ```
 coverage run -m pytest -v && coverage report -m
