@@ -8,3 +8,4 @@ venvps/
 # data/processed/
 # data/raw/
 docs/_build/
+*.egg-info
