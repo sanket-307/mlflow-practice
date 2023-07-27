@@ -5,7 +5,7 @@ venvps/
 *.log
 *.csv
 /*.pkl
-!artifacts/.gitkeep
-!data/processed/.gitkeep
-!data/raw/.gitkeep
-!docs/_build/
+artifacts/*.pkl
+data/processed/*.csv
+data/raw/*.
+docs/_build/*
