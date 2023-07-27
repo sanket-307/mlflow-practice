@@ -4,5 +4,5 @@ venvps/
 .vscode/
 *.log
 *.csv
-*.pkl
+/*.pkl
 docs/_build/
