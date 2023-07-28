@@ -1,0 +1,11 @@
+venv/
+venvps/
+*.pyc
+.vscode/
+*.log
+*.pkl
+# artifacts/
+# data/processed/
+# data/raw/
+docs/_build/
+*.egg-info
