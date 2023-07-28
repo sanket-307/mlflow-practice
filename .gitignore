@@ -9,3 +9,4 @@ venvps/
 # data/raw/
 docs/_build/
 *.egg-info
+*.csv
