@@ -169,6 +169,17 @@ def drop_income_cat(strat_train_set, strat_test_set):
 
 
 def transform_pipeline(data_to_transform):
+
+    """numeric data preprocessing pipeline, categorical data preprocessing pipeline and three new feature engineered customtransformer
+
+    Args:
+        data_to_transform (dataframe, mandatory)
+
+
+    Return : col_trans (ColumnTransformer object), num_attribs (numeric columns name list), cat_attribs (categorical column name list)
+
+    """
+
     col_names = "total_rooms", "total_bedrooms", "population", "households"
     rooms_ix, bedrooms_ix, population_ix, households_ix = [
         data_to_transform.columns.get_loc(c) for c in col_names
@@ -223,7 +234,7 @@ def feature_engineering_traindataset(housing):
         housing (dataframe, mandatory)
 
 
-    Return : X_train (dataframe), y_train (dataframe), imputer(imputer fit object).
+    Return : X_train (dataframe), y_train (dataframe), col_trans(column transformer), final_columns(string).
 
     """
     y_train = housing["median_house_value"].copy()
@@ -266,7 +277,8 @@ def feature_engineering_testdataset(housing_test, col_trans, final_columns):
 
     Args:
         housing_test (dataframe, mandatory)
-        imputer (imputer fit object)
+        col_trans(column transformer)
+        final_columns(string)
 
 
     Return : X_test (dataframe), y_test (dataframe).
