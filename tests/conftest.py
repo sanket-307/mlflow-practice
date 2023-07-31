@@ -1,6 +1,6 @@
 import pytest
 
-from src.mlhousing.dataprocessing.preprocess import (
+from mlhousing.preprocess import (
     load_housing_data,
     binning,
     startified_split,

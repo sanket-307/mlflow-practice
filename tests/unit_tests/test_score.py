@@ -4,7 +4,7 @@ import pickle
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
-from src.mlhousing.score.score import linear_score, dt_score, rf_rs_score, rf_grid_score
+from mlhousing.score import linear_score, dt_score, rf_rs_score, rf_grid_score
 
 
 def data_generator(testing_data_path):
