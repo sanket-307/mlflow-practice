@@ -11,4 +11,6 @@ docs/_build/
 *.egg-info
 *.csv
 *.coverage
+mlruns/
+*.coverage
 

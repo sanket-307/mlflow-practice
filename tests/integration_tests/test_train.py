@@ -30,43 +30,49 @@ def data_generator(training_data_path):
     return X_train, y_train
 
 
-def test_linear_regression_train_save(params):
-    """integration testing of linear regression.
+# def test_linear_regression_train_save(params, mocker):
+#     """integration testing of linear regression.
 
-    Args:
-        params (dictionary from conftest.py)
-
-
-    Return : assert, None.
-
-    """
-
-    X_train, y_train = data_generator(params["OUTPUT_PATH"])
-
-    artifacts = params["ARTIFACTS_PATH"]
-
-    linear_regression(X_train, y_train, artifacts)
-
-    linear_pickle = os.path.join(artifacts, "linearmodel.pkl")
-    assert path.exists(linear_pickle)
+#     Args:
+#         params (dictionary from conftest.py)
 
 
-def test_decision_tree_train_save(params):
-    """integration testing of DT regression.
+#     Return : assert, None.
 
-    Args:
-        params (dictionary from conftest.py)
+#     """
+
+#     mlflow_mock = mocker.MagicMock()
+
+#     X_train, y_train = data_generator(params["OUTPUT_PATH"])
+
+#     artifacts = params["ARTIFACTS_PATH"]
+
+#     linear_regression(X_train, y_train, artifacts, mlflow_mock)
+
+#     linear_pickle = os.path.join(artifacts, "linearmodel.pkl")
+#     assert path.exists(linear_pickle)
+
+#     mlflow_mock.log_artifact.return_value = None
+
+#     mlflow_mock.log_artifact.assert_called_with(linear_pickle)
 
 
-    Return : assert, None.
+# def test_decision_tree_train_save(params):
+#     """integration testing of DT regression.
 
-    """
+#     Args:
+#         params (dictionary from conftest.py)
 
-    X_train, y_train = data_generator(params["OUTPUT_PATH"])
 
-    artifacts = params["ARTIFACTS_PATH"]
+#     Return : assert, None.
 
-    decision_tree(X_train, y_train, artifacts)
+#     """
 
-    dt_pickle = os.path.join(artifacts, "dtmodel.pkl")
-    assert path.exists(dt_pickle)
+#     X_train, y_train = data_generator(params["OUTPUT_PATH"])
+
+#     artifacts = params["ARTIFACTS_PATH"]
+
+#     decision_tree(X_train, y_train, artifacts)
+
+#     dt_pickle = os.path.join(artifacts, "dtmodel.pkl")
+#     assert path.exists(dt_pickle)

@@ -169,7 +169,6 @@ def drop_income_cat(strat_train_set, strat_test_set):
 
 
 def transform_pipeline(data_to_transform):
-
     """numeric data preprocessing pipeline, categorical data preprocessing pipeline and three new feature engineered customtransformer
 
     Args:
@@ -301,7 +300,17 @@ def feature_engineering_testdataset(housing_test, col_trans, final_columns):
     return X_test, y_test
 
 
-def save_processdata(X_train, y_train, X_test, y_test, INPUT_FILE, OUTPUT_PATH):
+def save_processdata(
+    X_train,
+    y_train,
+    X_test,
+    y_test,
+    INPUT_FILE,
+    OUTPUT_PATH,
+    mlflow,
+    PandasDataset,
+    NumpyDataset,
+):
     """stron preprocessed final X_train, y_train, X_test, y_test data to mentioned output path folder,
       input_file name argument taken to give the dynamic file name.
 
@@ -338,6 +347,35 @@ def save_processdata(X_train, y_train, X_test, y_test, INPUT_FILE, OUTPUT_PATH):
     X_test.to_csv(os.path.join(OUTPUT_PATH, test_filename), index=False)
     y_test.to_csv(os.path.join(OUTPUT_PATH, testlabel_filename), index=False)
 
+    train_dataset: PandasDataset = mlflow.data.from_pandas(
+        X_train, source=os.path.join(OUTPUT_PATH, training_file)
+    )
+    train_label_dataset: NumpyDataset = mlflow.data.from_numpy(
+        y_train.values, source=os.path.join(OUTPUT_PATH, label_file)
+    )
+    test_dataset: PandasDataset = mlflow.data.from_pandas(
+        X_test, source=os.path.join(OUTPUT_PATH, test_filename)
+    )
+    test_label_dataset: NumpyDataset = mlflow.data.from_numpy(
+        y_test.values, source=os.path.join(OUTPUT_PATH, testlabel_filename)
+    )
+
+    with mlflow.start_run(run_name="nested_preprocessing", nested=True):
+        # Log the dataset to the MLflow Run. Specify the "training" context to indicate that the
+        # dataset is used for model training
+        mlflow.log_input(train_dataset, context="training_data")
+        mlflow.log_input(train_label_dataset, context="training_label")
+        mlflow.log_input(test_dataset, context="test_data")
+        mlflow.log_input(test_label_dataset, context="test_label")
+
+        mlflow.log_param("X_train shape", X_train.shape)
+        mlflow.log_param("y_train shape", y_train.shape)
+        mlflow.log_param("X_test shape", X_test.shape)
+        mlflow.log_param("y_test shape", y_test.shape)
+
+    # mlflow.log_artifacts(test_filename)
+    # mlflow.log_artifacts(os.path.join(../.., training_file))
+
     os.chdir(OUTPUT_PATH)
 
     logging.debug(
@@ -356,7 +394,9 @@ def save_processdata(X_train, y_train, X_test, y_test, INPUT_FILE, OUTPUT_PATH):
     logging.info("Preprocessing and Feature Engineering step completed.")
 
 
-def init_preprocess(INPUT_PATH, INPUT_FILE, OUTPUT_PATH):
+def init_preprocess(
+    INPUT_PATH, INPUT_FILE, OUTPUT_PATH, mlflow, PandasDataset, NumpyDataset
+):
     """function take commandline arguments and call different function to execute proprocessing operations
 
     Args:
@@ -367,7 +407,7 @@ def init_preprocess(INPUT_PATH, INPUT_FILE, OUTPUT_PATH):
     Return : None.
 
     """
-
+    # with mlflow.start_run(run_name="nested_preprocessing", nested=True):
     make_dirs(OUTPUT_PATH)
     housing = load_housing_data(INPUT_PATH, INPUT_FILE)
     housing = binning(housing)
@@ -380,7 +420,21 @@ def init_preprocess(INPUT_PATH, INPUT_FILE, OUTPUT_PATH):
     X_train, y_train, col_trans, final_columns = feature_engineering_traindataset(
         housing
     )
+    # mlflow.log_param("X_train shape", X_train.shape)
+    # mlflow.log_param("y_train shape", y_train.shape)
     X_test, y_test = feature_engineering_testdataset(
         housing_test, col_trans, final_columns
     )
-    save_processdata(X_train, y_train, X_test, y_test, INPUT_FILE, OUTPUT_PATH)
+    # mlflow.log_param("X_test shape", X_test.shape)
+    # mlflow.log_param("y_test shape", y_test.shape)
+    save_processdata(
+        X_train,
+        y_train,
+        X_test,
+        y_test,
+        INPUT_FILE,
+        OUTPUT_PATH,
+        mlflow,
+        PandasDataset,
+        NumpyDataset,
+    )

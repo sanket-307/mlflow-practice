@@ -4,6 +4,18 @@ from mlhousing.preprocess import init_preprocess
 from mlhousing.ingest_data import fetch_housing_data
 from mlhousing.train import init_training
 from mlhousing.score import init_score
+import mlflow
+from mlflow.data.pandas_dataset import PandasDataset
+from mlflow.data.numpy_dataset import NumpyDataset
+
+
+remote_server_uri = "http://127.0.0.1:5000"
+mlflow.set_tracking_uri(remote_server_uri)
+
+print(mlflow.get_tracking_uri())
+
+expriment_name = "mlhousing"
+mlflow.set_experiment(expriment_name)
 
 
 def parse_args():
@@ -86,7 +98,16 @@ if __name__ == "__main__":
 
     inputs = parse_args()
 
-    fetch_housing_data(inputs.output_folder_rawdata)
-    init_preprocess(inputs.input_folder, inputs.input_filename, inputs.output_folder)
-    init_training(inputs.training_data_path, inputs.artifacts_path)
-    init_score(inputs.training_data_path, inputs.artifacts_path)
+    with mlflow.start_run(run_name="PARENT_RUN"):
+        mlflow.log_param("raw_data_path", inputs.output_folder_rawdata)
+        fetch_housing_data(inputs.output_folder_rawdata)
+        init_preprocess(
+            inputs.input_folder,
+            inputs.input_filename,
+            inputs.output_folder,
+            mlflow,
+            PandasDataset,
+            NumpyDataset,
+        )
+        init_training(inputs.training_data_path, inputs.artifacts_path, mlflow)
+        init_score(inputs.training_data_path, inputs.artifacts_path, mlflow)
