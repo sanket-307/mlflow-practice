@@ -7,27 +7,27 @@
 # )
 
 
-def data_generator(training_data_path):
-    """data genrator function to load processed training data and label to do integration test of training.
+# def data_generator(training_data_path):
+#     """data genrator function to load processed training data and label to do integration test of training.
 
-    Args:
-        training_data_path (string, mandatory)
+#     Args:
+#         training_data_path (string, mandatory)
 
 
-    Return : X_train, y_train (Dataframe).
+#     Return : X_train, y_train (Dataframe).
 
-    """
+#     """
 
-    training_data = os.path.join(training_data_path, "housing_train.csv")
-    training_label = os.path.join(training_data_path, "housing_label.csv")
+#     training_data = os.path.join(training_data_path, "housing_train.csv")
+#     training_label = os.path.join(training_data_path, "housing_label.csv")
 
-    X_train = pd.read_csv(training_data)
-    y_train = pd.read_csv(training_label)
+#     X_train = pd.read_csv(training_data)
+#     y_train = pd.read_csv(training_label)
 
-    X_train = X_train[:1000]
-    y_train = y_train[:1000]
+#     X_train = X_train[:1000]
+#     y_train = y_train[:1000]
 
-    return X_train, y_train
+#     return X_train, y_train
 
 
 # def test_linear_regression_train_save(params, mocker):
