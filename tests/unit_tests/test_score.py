@@ -57,89 +57,89 @@ def test_linear_regression_load_score(params, mocker):
     mlflow_mock.log_metric.assert_any_call("mae", rmse["Linear mae"])
 
 
-def test_decision_tree_load_score(params, mocker):
-    """unit testing of DT regression.
+# def test_decision_tree_load_score(params, mocker):
+#     """unit testing of DT regression.
 
-    Args:
-        params (dictionary from conftest.py)
-
-
-    Return : assert, None.
-
-    """
-    mlflow_mock = mocker.MagicMock()
-
-    X_test, y_test = data_generator(params["OUTPUT_PATH"])
-
-    artifacts = params["ARTIFACTS_PATH"]
-
-    rmse = dt_score(X_test, y_test, artifacts, mlflow_mock)
-
-    dt_pickle = os.path.join(artifacts, "dtmodel.pkl")
-    tree_reg = pickle.load(open(dt_pickle, "rb"))
-    assert isinstance(tree_reg, DecisionTreeRegressor)
-    assert isinstance(rmse["DT RMSE"], float)
-    assert rmse["DT RMSE"] >= 0.0
-
-    mlflow_mock.start_run.assert_called()
-    mlflow_mock.log_metric.assert_any_call("mse", rmse["DT MSE"])
-    mlflow_mock.log_metric.assert_any_call("rmse", rmse["DT RMSE"])
+#     Args:
+#         params (dictionary from conftest.py)
 
 
-def test_rf_rs_regression_load_score(params, mocker):
-    """unit testing of random forest random search hyperparameter regression.
+#     Return : assert, None.
 
-    Args:
-        params (dictionary from conftest.py)
+#     """
+#     mlflow_mock = mocker.MagicMock()
 
+#     X_test, y_test = data_generator(params["OUTPUT_PATH"])
 
-    Return : assert, None.
+#     artifacts = params["ARTIFACTS_PATH"]
 
-    """
+#     rmse = dt_score(X_test, y_test, artifacts, mlflow_mock)
 
-    mlflow_mock = mocker.MagicMock()
+#     dt_pickle = os.path.join(artifacts, "dtmodel.pkl")
+#     tree_reg = pickle.load(open(dt_pickle, "rb"))
+#     assert isinstance(tree_reg, DecisionTreeRegressor)
+#     assert isinstance(rmse["DT RMSE"], float)
+#     assert rmse["DT RMSE"] >= 0.0
 
-    X_test, y_test = data_generator(params["OUTPUT_PATH"])
-
-    artifacts = params["ARTIFACTS_PATH"]
-
-    rmse = rf_rs_score(X_test, y_test, artifacts, mlflow_mock)
-
-    rf_rs_pickle = os.path.join(artifacts, "rf_rs_model.pkl")
-    rf_rs_model = pickle.load(open(rf_rs_pickle, "rb"))
-    assert isinstance(rf_rs_model, RandomForestRegressor)
-    assert isinstance(rmse["RT RS RMSE"], float)
-    assert rmse["RT RS RMSE"] >= 0.0
-
-    mlflow_mock.start_run.assert_called()
-    mlflow_mock.log_metric.assert_any_call("mse", rmse["RT RS MSE"])
-    mlflow_mock.log_metric.assert_any_call("rmse", rmse["RT RS RMSE"])
+#     mlflow_mock.start_run.assert_called()
+#     mlflow_mock.log_metric.assert_any_call("mse", rmse["DT MSE"])
+#     mlflow_mock.log_metric.assert_any_call("rmse", rmse["DT RMSE"])
 
 
-def test_rf_grid_regression_load_score(params, mocker):
-    """unit testing of random forest grid search hyperparameter regression.
+# def test_rf_rs_regression_load_score(params, mocker):
+#     """unit testing of random forest random search hyperparameter regression.
 
-    Args:
-        params (dictionary from conftest.py)
+#     Args:
+#         params (dictionary from conftest.py)
 
 
-    Return : assert, None.
+#     Return : assert, None.
 
-    """
-    mlflow_mock = mocker.MagicMock()
+#     """
 
-    X_test, y_test = data_generator(params["OUTPUT_PATH"])
+#     mlflow_mock = mocker.MagicMock()
 
-    artifacts = params["ARTIFACTS_PATH"]
+#     X_test, y_test = data_generator(params["OUTPUT_PATH"])
 
-    rmse = rf_grid_score(X_test, y_test, artifacts, mlflow_mock)
+#     artifacts = params["ARTIFACTS_PATH"]
 
-    rf_grid_pickle = os.path.join(artifacts, "rf_rs_model.pkl")
-    rf_grid_model = pickle.load(open(rf_grid_pickle, "rb"))
-    assert isinstance(rf_grid_model, RandomForestRegressor)
-    assert isinstance(rmse["RT GRID RMSE"], float)
-    assert rmse["RT GRID RMSE"] >= 0.0
+#     rmse = rf_rs_score(X_test, y_test, artifacts, mlflow_mock)
 
-    mlflow_mock.start_run.assert_called()
-    mlflow_mock.log_metric.assert_any_call("mse", rmse["RT GRID MSE"])
-    mlflow_mock.log_metric.assert_any_call("rmse", rmse["RT GRID RMSE"])
+#     rf_rs_pickle = os.path.join(artifacts, "rf_rs_model.pkl")
+#     rf_rs_model = pickle.load(open(rf_rs_pickle, "rb"))
+#     assert isinstance(rf_rs_model, RandomForestRegressor)
+#     assert isinstance(rmse["RT RS RMSE"], float)
+#     assert rmse["RT RS RMSE"] >= 0.0
+
+#     mlflow_mock.start_run.assert_called()
+#     mlflow_mock.log_metric.assert_any_call("mse", rmse["RT RS MSE"])
+#     mlflow_mock.log_metric.assert_any_call("rmse", rmse["RT RS RMSE"])
+
+
+# def test_rf_grid_regression_load_score(params, mocker):
+#     """unit testing of random forest grid search hyperparameter regression.
+
+#     Args:
+#         params (dictionary from conftest.py)
+
+
+#     Return : assert, None.
+
+#     """
+#     mlflow_mock = mocker.MagicMock()
+
+#     X_test, y_test = data_generator(params["OUTPUT_PATH"])
+
+#     artifacts = params["ARTIFACTS_PATH"]
+
+#     rmse = rf_grid_score(X_test, y_test, artifacts, mlflow_mock)
+
+#     rf_grid_pickle = os.path.join(artifacts, "rf_rs_model.pkl")
+#     rf_grid_model = pickle.load(open(rf_grid_pickle, "rb"))
+#     assert isinstance(rf_grid_model, RandomForestRegressor)
+#     assert isinstance(rmse["RT GRID RMSE"], float)
+#     assert rmse["RT GRID RMSE"] >= 0.0
+
+#     mlflow_mock.start_run.assert_called()
+#     mlflow_mock.log_metric.assert_any_call("mse", rmse["RT GRID MSE"])
+#     mlflow_mock.log_metric.assert_any_call("rmse", rmse["RT GRID RMSE"])

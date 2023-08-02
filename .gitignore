@@ -4,6 +4,7 @@ venvps/
 .vscode/
 *.log
 *.pkl
+!linearmodel.pkl
 # artifacts/
 # data/processed/
 # data/raw/
