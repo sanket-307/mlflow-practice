@@ -1,10 +1,10 @@
-from os import path
-import os
-import pandas as pd
-from mlhousing.train import (
-    linear_regression,
-    decision_tree,
-)
+# from os import path
+# import os
+# import pandas as pd
+# from mlhousing.train import (
+#     linear_regression,
+#     decision_tree,
+# )
 
 
 def data_generator(training_data_path):
