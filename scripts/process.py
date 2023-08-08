@@ -9,7 +9,8 @@ from mlflow.data.pandas_dataset import PandasDataset
 from mlflow.data.numpy_dataset import NumpyDataset
 
 
-remote_server_uri = "http://127.0.0.1:5000"
+# remote_server_uri = "http://127.0.0.1:5000"
+remote_server_uri = "file:/app/mlflow_data"
 mlflow.set_tracking_uri(remote_server_uri)
 
 print(mlflow.get_tracking_uri())

@@ -14,4 +14,7 @@ docs/_build/
 *.coverage
 mlruns/
 *.coverage
+mlflow_data/
+*.whl
+
 

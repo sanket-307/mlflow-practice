@@ -1,0 +1,22 @@
+# Use a base image with Python and other necessary dependencies installed
+FROM python:3.10.10
+
+# Install necessary dependencies
+RUN pip install mlflow
+
+# Expose the MLflow server port (default: 5000)
+EXPOSE 5000
+
+# Set environment variables for MLflow server configuration
+ENV MLFLOW_SERVER_HOST=0.0.0.0
+ENV MLFLOW_SERVER_PORT=5000
+ENV MLFLOW_TRACKING_URI=file:/mlflow_data
+
+# Set the working directory inside the container
+WORKDIR /mlflow_data
+
+# Run the MLflow server
+CMD mlflow server \
+    --host $MLFLOW_SERVER_HOST \
+    --port $MLFLOW_SERVER_PORT \
+    --backend-store-uri $MLFLOW_TRACKING_URI
